@@ -2,3 +2,7 @@ Flask==3.0.3
 Flask-Cors==4.0.1
 Werkzeug==3.0.3
 gunicorn==21.2.0
+opencv-python-headless==4.9.0.80
+PyAutoGUI==0.9.54
+geocoder==1.38.1
+pypiwin32==223
