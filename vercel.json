@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/api/(.*)",
-      "destination": "https://srv-d6j7vvjuibrs73afrlqg/api/$1"
+      "destination": "https://neuro-mimesis-version-1.onrender.com/api/$1"
     },
     {
       "source": "/(.*)",
