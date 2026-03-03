@@ -56,7 +56,7 @@ export const Intro = ({ onStart }: IntroProps) => {
         setError(null);
 
         try {
-            const response = await fetch('/api/configure', {
+            const response = await fetch('https://neuro-mimesis-version-1.onrender.com/api/configure', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(config)

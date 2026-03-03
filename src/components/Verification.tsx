@@ -36,7 +36,7 @@ export const Verification = ({ username, onComplete }: VerificationProps) => {
 
         try {
             // First, retrieve the profile from the database
-            const response = await fetch('/api/verify_user', {
+            const response = await fetch('https://neuro-mimesis-version-1.onrender.com/api/verify_user', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ username })

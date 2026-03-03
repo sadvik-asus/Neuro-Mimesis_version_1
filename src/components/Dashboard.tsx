@@ -64,7 +64,7 @@ export const Dashboard = ({ result, onRetry }: DashboardProps) => {
             color: 'red',
             icon: Camera
         });
-        fetch('/api/test/capture', { method: 'POST' }).catch(console.error);
+        fetch('https://neuro-mimesis-version-1.onrender.com/api/test/capture', { method: 'POST' }).catch(console.error);
 
         await new Promise(r => setTimeout(r, 2000));
 
@@ -96,7 +96,7 @@ export const Dashboard = ({ result, onRetry }: DashboardProps) => {
             color: 'red',
             icon: Lock
         });
-        fetch('http://localhost:5000/api/test/lock', { method: 'POST' }).catch(console.error);
+        fetch('https://neuro-mimesis-version-1.onrender.com/api/test/lock', { method: 'POST' }).catch(console.error);
 
         // Clear after a while (if user unlocks)
         setTimeout(() => setNotification(null), 5000);
@@ -110,7 +110,7 @@ export const Dashboard = ({ result, onRetry }: DashboardProps) => {
             icon: ShieldCheck
         });
 
-        fetch('http://localhost:5000/api/panic', { method: 'POST' }).catch(console.error);
+        fetch('https://neuro-mimesis-version-1.onrender.com/api/panic', { method: 'POST' }).catch(console.error);
 
         await new Promise(r => setTimeout(r, 2000));
 

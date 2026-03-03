@@ -28,7 +28,7 @@ export const Auth = ({ onLogin, onRegister }: AuthProps) => {
 
         if (isLogin) {
             try {
-                const response = await fetch('/api/login', {
+                const response = await fetch('https://neuro-mimesis-version-1.onrender.com/api/login', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ username, password })

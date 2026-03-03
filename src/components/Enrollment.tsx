@@ -52,7 +52,7 @@ export const Enrollment = ({ onComplete, username, password }: EnrollmentProps) 
             };
 
             try {
-                const response = await fetch('/api/register', {
+                const response = await fetch('https://neuro-mimesis-version-1.onrender.com/api/register', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ username, password, profile })
