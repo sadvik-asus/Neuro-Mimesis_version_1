@@ -16,7 +16,7 @@ const PHRASES = [
     "Cognitive patterns are the soul of the digital age"
 ];
 
-export const Verification = ({ profile, username, onComplete }: VerificationProps) => {
+export const Verification = ({ username, onComplete }: VerificationProps) => {
     const [text, setText] = useState("");
     const [analyzing, setAnalyzing] = useState(false);
     const [isSimulating, setIsSimulating] = useState(false);
