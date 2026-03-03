@@ -56,7 +56,7 @@ export const Intro = ({ onStart }: IntroProps) => {
         setError(null);
 
         try {
-            const response = await fetch('http://localhost:5000/api/configure', {
+            const response = await fetch('/api/configure', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(config)

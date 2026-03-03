@@ -36,7 +36,7 @@ export const Verification = ({ profile, username, onComplete }: VerificationProp
 
         try {
             // First, retrieve the profile from the database
-            const response = await fetch('http://localhost:5000/api/verify_user', {
+            const response = await fetch('/api/verify_user', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ username })

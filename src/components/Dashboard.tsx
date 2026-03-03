@@ -64,7 +64,7 @@ export const Dashboard = ({ result, onRetry }: DashboardProps) => {
             color: 'red',
             icon: Camera
         });
-        fetch('http://localhost:5000/api/test/capture', { method: 'POST' }).catch(console.error);
+        fetch('/api/test/capture', { method: 'POST' }).catch(console.error);
 
         await new Promise(r => setTimeout(r, 2000));
 
